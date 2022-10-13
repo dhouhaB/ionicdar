@@ -1,0 +1,22 @@
+.covercontent
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    left: 40%;
+    line-height: 60px;
+;
+}
+h2,p{
+    font-size: 30px;
+}
+@media (max-wdth:600px) {
+    .covercontent {
+      position: absolute;
+        right: -30%;
+   
+    }
+    
+}

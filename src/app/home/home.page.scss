@@ -1,27 +1,168 @@
-#container {
-  text-align: center;
+.login-header
+{
+  background-color: var(--theme-color);
 
+}
+.logo-img
+{
+display:block;
+width:120px;
+margin:0 auto;
+text-align: center;
+}
+.login-header
+{
+  position: relative;
+  background-color: var(--theme-color);
+border-radius: 0em;
+}
+.login-header::after
+{
+  content: '';
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
+  bottom: 0;
+  left:15%;
+  width: 0;
+  height:0;
+  border: 20px solid transparent;
+  border-top-color: var(--theme-color);
+  border-bottom: 0;
+  margin-left: -15px;
+  margin-bottom: -15px;
 
-#container strong {
+
+
+}
+[heading-column-lr]
+{
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+[big-heading]{
+  font-family: "Heebo-Bold" !important;
+  font-size: 30px !important;
+  color: var(--theme-black);
+}
+[small-heading]
+{
+  font-family:"Heebo-Bold" !important ;
+  margin-left: auto;padding-right: 40px; font-size: 15px;
+}
+ion-label
+{
+  color:#000;
+  opacity:-8;
+  font-size:13px;
+  display:block;
+  margin-left: 30px;
+
+}
+-ion-content
+{
+  --background:#fafafa;
   font-size: 20px;
-  line-height: 26px;
+}
+[transperent]
+{
+  --background:transperent;
+}
+ion-input 
+{
+  --color:#000;
+  --padding-bottom:15px;
+  --padding-top:15px;
+  --padding-stary:5px;
+  font-size: 15px;
+  text-indent: 1px;
+  margin-right: 300;
+ /* padding-left: 10px !important;*/
+  margin-left:20px;
+}
+[icon-small]
+{
+  width: 30px;
+
+}
+ion-item{
+  --highlight-color-focused:transparent;
+  --highlight-height:0;
+  --highlight-color-invalid:#ddd;
+  --min-height:65px;
+  --padding-start:0;
+
+}
+[linespace]
+{
+  height:30px;
+
+}
+ion-label
+{
+  color:#000;
+  opacity: .8;
+  font-size: 20px;
+  font-weight: 200;
+  display: block;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
 
-  color: #8c8c8c;
-
-  margin: 0;
+.cover {
+  margin-top: 0%;
+  position: absolute;
+  left: 0%;
+  top:20%;
 }
 
-#container a {
-  text-decoration: none;
+ion-button
+{
+  margin-top: 40px;
+  margin-left: 30%;
+  color: var(--theme-color);
+
+
+
+}
+
+
+
+
+@media (min-height:319px)
+{
+  .center 
+{
+  position: absolute;
+  left:50%;
+  top:40%;
+  --webkit-transform:translate(-49%,-49%);
+  transform: translate(-49%,-49%);
+  width: 90%;
+}
+
+}
+@media (min-height:735px)
+{
+  .center 
+{
+  position: absolute;
+  left:50%;
+  top:45%;
+  --webkit-transform:translate(-49%,-49%);
+  transform: translate(-49%,-49%);
+  width: 90%;
+}
+
+}
+@media (min-height:812px)
+{
+  .center 
+{
+  position: absolute;
+  left:50%;
+  top:40%;
+  --webkit-transform:translate(-49%,-49%);
+  transform: translate(-49%,-49%);
+  width: 90%;
+}
+
 }
