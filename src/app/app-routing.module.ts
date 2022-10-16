@@ -8,12 +8,24 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'homedararabic',
     pathMatch: 'full'
   },
   {
     path: 'welcome1',
     loadChildren: () => import('./welcome1/welcome1.module').then( m => m.Welcome1PageModule)
+  },
+  {
+    path: 'homedar',
+    loadChildren: () => import('./homedar/homedar.module').then( m => m.HomedarPageModule)
+  },
+  {
+    path: 'homeenglish',
+    loadChildren: () => import('./homeenglish/homeenglish.module').then( m => m.HomeenglishPageModule)
+  },
+  {
+    path: 'homedararabic',
+    loadChildren: () => import('./homedararabic/homedararabic.module').then( m => m.HomedararabicPageModule)
   },
 ];
 
